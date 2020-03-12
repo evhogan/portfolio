@@ -1,0 +1,430 @@
+body {
+	background-color: #add8e6;
+}
+
+a.skip{
+  background: #fdfd96;
+  left: 10px;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top .5s ease-out;
+  transition: top .5s ease-out;
+  z-index: 1;
+}
+
+a.skip:focus{
+  top:15px;
+  color: black;
+  text-decoration-style: solid;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+header {
+	background-image: url("../imgs/banner_phone.png");
+	background-attachment: fixed;      
+  	background-position: center;  
+	background-repeat: no-repeat; 
+	background-size: cover;                  
+}
+
+.crest {
+	height: 90px;
+}
+
+/*animation*/
+#rotate_me {
+  -webkit-animation: lightbulb 3.5s infinite linear;
+  animation: lightbulb 3.5s infinite linear;
+}
+
+@-webkit-keyframes lightbulb {
+  to { -webkit-transform: rotateY(360deg); }
+}
+
+@keyframes lightbulb {
+  to { transform: rotateY(360deg); }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  #rotate_me {
+    -webkit-animation: none;
+    animation: none;
+  }
+}
+
+#headshot {
+	width: 250px;
+}
+
+/*page 1 images*/
+#headshot, #family, #hometown, #mountain, #beach {
+	display: block;
+	margin: auto;
+}
+
+#headshot {
+	width: 250px;
+}
+
+#family {
+	width: 280px;
+	margin-top: 20px;
+}
+
+#mountain, #beach {
+	width: 280px;
+	margin-top: 20px;
+}
+
+/*page 2 images*/
+
+#headshot, #umsi, #pics, #rll{
+	display: block;
+	margin: auto;
+}
+
+
+#umsi {
+	width: 180px;
+	margin-top: 20px;
+}
+
+#pics { 
+	width: 180px;
+	margin-top: 20px;
+}
+
+#rll {
+	width: 280px;
+	background-color: navy;
+	padding: 15px;
+}
+
+#rll2 {
+	display: none;
+}
+
+.onpage {
+	font-size: 12pt;
+}
+
+.nonpage {
+	color: #000080;
+	font-family: "Arial";
+}
+
+
+#hometown2, #beach2{
+	display: none;
+}
+
+/*page 3 images*/
+
+#dcc {
+	padding-top: 20px;
+	display: block;
+	margin: auto;
+	width: 400px;
+}
+
+#arena2 {
+	display:none;
+}
+
+#arena, #ao {
+	padding: 10px;
+	display: block;
+	margin: auto;
+}
+
+/*page 4 images*/
+
+#cru, #oob, #lookout, #study {
+	display: block;
+	margin: auto;
+}
+
+#cru, #study {
+	width: 280px;
+	margin-top: 20px;
+}
+
+#lookout {
+	width: 345px;
+	margin-top: 20px;
+}
+
+#oob {
+	width: 300px;
+}
+
+#oob2, #study2{
+	display: none;
+}
+
+/*form*/
+
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
+
+.field {
+	display: grid;
+    row-gap: 5px;
+    column-gap: 5px;
+    border: 1px dotted black;
+    margin-top: 15px;
+    justify-items: left;
+}
+
+#main_info{
+   	grid-template-columns: 100px 300px;
+}
+
+#who{
+   	grid-template-columns: 20px 130px;
+}	
+
+#why{
+   	grid-template-columns: 20px 230px;
+}
+
+#do_you_like{
+   	grid-template-columns: 20px 180px;
+}
+
+h3 {
+	grid-column: 1 / span 2;
+}
+
+#description {
+	width: 300px;
+	height: 230px;
+}
+
+
+
+.main{
+	width: 300px;
+}
+
+.button {
+	margin-top: 30px;
+}
+a {
+	font-size: 9pt;
+}
+
+#longbox, #stacked_phone, #stacked_tab {
+	display: flex;
+	flex-direction: row;
+	background-color: #fdfd96;
+	justify-content: space-around;
+	align-items: center;
+	display: none;
+}
+
+#stacked_phone {
+	display: flex;
+}
+
+footer {
+	display: flex;
+	font-family: "Arial";
+	height: 50px;
+	margin-top: 30px;
+	align-items: center;
+} 
+
+footer > p {
+	font-size: 10pt;
+	text-shadow: 1px 1px #fdfd96;
+}
+
+@media all and (min-width: 700px){
+	header {
+		background-image: url("../imgs/banner_tab.png");
+	}
+
+	#stacked_phone, #longbox {
+		display:none;
+	}
+
+	#stacked_tab {
+		display: flex;
+	}	
+
+/*page 2 images*/
+	#rll2, #umsi, #pics {
+		display: inline;
+		margin: 0px;
+		padding: 0px;
+		width: 230px;
+	}
+
+	#umsi {
+		width: 300px;
+	}
+
+	#rll2 {
+		width: 350px;
+		background-color: navy;
+		padding: 15px;
+	}
+
+	#rll {
+		display: none;
+	}
+/*page 1 images*/
+	#hometown2, #beach2, #family, #mountain {
+		display: inline;
+		margin: 0px;
+		padding: 0px;
+		width: 300px;
+	}
+
+	.box1, .box2 {
+		margin-top: 20px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+
+
+	#hometown, #beach{
+		display: none;
+	}
+/*page 3 images*/
+	#arena2, #ao, #dcc {
+		display: inline;
+		margin: 0px;
+		padding: 0px;
+	}
+	#dcc {
+		width: 300px;
+	}
+
+	#arena2 {
+		width: 270px;
+	}
+	#ao {
+		width: 470px;
+	}
+	#arena {
+		display: none;
+	}
+
+/*page 4 images*/
+
+#oob2, #study2, #cru, #lookout{
+	display: inline;
+	margin: 0px;
+	padding: 0px;
+	width: 300px;
+}
+
+#oob2 {
+	width: 250px;
+}
+
+#oob, #study{
+	display: none;
+}
+
+.onpage {
+		font-size: 17px;	
+	}
+
+.nonpage {
+		font-size: 14px;
+	}
+
+@media all and (min-width: 1100px){
+
+	#longbox {
+		display: flex;
+	}
+
+	#stacked_phone {
+		display:none;
+	}
+
+	#stacked_tab {
+		display:none;
+	}	
+
+	#hometown2, #beach2, #family, #mountain {
+		width: 400px;
+	}
+
+	#umsi{
+		width: 330px;
+	}
+
+	#pics {
+		width: 270px;
+	}
+
+	#rll2 {
+		width: 450px;
+		padding: 15px;
+	}
+
+	#dcc {
+		width: 500px;
+	}
+
+	#arena2 {
+		width: 400px;
+	}
+
+	#ao {
+		width: 630px;
+	}
+
+	#oob2, #study2, #cru, #lookout{
+		display: inline;
+		margin: 0px;
+		padding: 0px;
+		width: 400px;
+	}
+
+	#oob2 {
+		width: 330px;
+	}
+
+	#lookout {
+		width: 370px;
+	}
+
+	.body {
+		max-width: 1290px;
+		display: block;
+		margin: auto;
+	}
+
+	.onpage {
+		font-size: 20px;	
+	}
+
+	.nonpage {
+		font-size: 17px;
+	}
+
+	header {
+		background-image: url("../imgs/banner.png");
+               
+}
+
+
+
