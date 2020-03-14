@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-160550844-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-160550844-1');
+</script>
+
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style_main.css">
+	<title>Portfolio gallery</title>
+	<script src = "js/stuff.js"></script>
+</head>
+<body onload = "getPhotos()">
+<a class = "skip" href="#here">Skip to Main Content</a>
+<header>
+	<img src = "imgs/headshot.jpg" id = "headshot" alt = "headshot"/>
+	<h1> Photo gallery </h1>
+	<nav>
+		<div id="longbox">
+			<img src = "imgs/crest.png" class = "crest" alt = "crest"/>
+			<a class = "nonpage" href="index.html">Home</a>
+			<a class = "nonpage" href="education.html">Education</a>
+			<a class = "nonpage" href="experience.html">Experience</a>
+			<a class = "nonpage" href="extra.html">Organizations</a>
+			<a class = "nonpage" href="contact.html">Contact</a>
+			<a class = "onpage" href="gallery.html">GALLERY</a>
+			</div>
+		<div id = "stacked_phone">
+			<img src = "imgs/crest.png" class = "crest" alt = "crest"/>
+			<ul>
+			<li><a class = "nonpage" href="index.html">Home</a></li>
+			<li><a class = "nonpage" href="education.html">Education</a></li>
+			<li><a class = "nonpage" href="experience.html">Experience</a></li>
+			</ul>
+			<ul>
+			<li><a class = "nonpage" href="extra.html">Organizations</a></li>
+			<li><a class = "nonpage" href="contact.html">Contact</a></li>
+			<li><a class = "onpage" href="gallery.html">GALLERY</a></li>
+			</ul>
+		</div>
+		<div id = "stacked_tab">
+			<img src = "imgs/crest.png" class = "crest" alt = "crest"/>
+			<ul>
+			<li><a class = "nonpage" href="index.html">Home</a></li>
+			<li><a class = "nonpage" href="education.html">Education</a></li>
+			</ul>
+			<ul>
+			<li><a class = "nonpage" href="experience.html">Experience</a></li>
+			<li><a class = "nonpage" href="extra.html">Organizations</a></li>
+			</ul>
+			<ul>
+			<li><a class = "nonpage" href="contact.html">Contact</a></li>
+			<li><a class = "onpage" href="gallery.html">GALLERY</a></li>
+			</ul>
+		</div>
+    </nav>
+</header>
+<main id = "here">
+  <h2> Mouse over or focus on a photo to see the description!</h2> 
+<div id = "buttons">
+
+	<button onclick="gray()" type="button" class="filter">Grayscale</button>
+	<button onclick="desaturate()" type="button" class="filter">Desaturate</button>
+	<button onclick="sepia()" type="button" class="filter">Old Timey</button>
+  <button onclick="reverse()" type="button" class="filter">Reverse</button>
+	<button onclick="color()" type="button" class="filter">Original</button>
+</div>
+<div id = "container">
+
+<a class="flip-card" href="#">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src = "imgs/dance.JPG" class = "pic" id = "dance" alt = "dance"/>
+  	</div>
+    <div class="flip-card-back">
+      <h2>Me and Victoria</h2> 
+      <p class = "caption">This me and my girlfriend at the annual "barn bash" dance held by one of our student orgs. Each year we dress up as farmers and square dance while doing other farm related activities, like bonfires. We're getting married next year!</p>
+    </div>
+  </div>
+</a>
+
+<a class="flip-card" href="#">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src = "imgs/burried.JPG" class = "pic" id = "hike" alt = "hike"/>
+    </div>
+    <div class="flip-card-back">
+      <h2>Buried in Ocean City</h2> 
+      <p class = "caption">This me buried up to my neck in Ocean City, New Jersey. I spent the summer of 2019 here at a leadership development/mission expedition with over sixty other Cru students from around the country.</p>
+    </div>
+  </div>
+</a>
+
+<a class="flip-card" href="#">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src = "imgs/paintball_r.jpg" class = "pic" id = "paintball" alt = "paintball"/>
+    </div>
+    <div class="flip-card-back">
+      <h2>Paintaball Match</h2> 
+      <p class = "caption">This is me in my typical paintball gear: mask, goggles, and marker (gun). Back when my cousin and I used to play at this arena, we were called the "bash brothers" because we have never lost a game when placed on the same team.</p>
+    </div>
+  </div>
+</a>
+
+<a class="flip-card" href="#">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src = "imgs/jazzy.png" class = "pic" id = "jazzy" alt = "jazzy"/>
+    </div>
+    <div class="flip-card-back">
+      <h2>My Dog Jazmine</h2> 
+      <p class = "caption">This is my second dog, Jazmine. She is 6 years old and currently lives in my house at Northville. She is the greatest dog ever, and if you disagree please feel free to fill out my contact form and educate me about how wrong I am.</p>
+    </div>
+  </div>
+</a>
+
+<a class="flip-card" href="#">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src = "imgs/monkey.JPG" class = "pic" id = "monkey" alt = "monkey"/>
+    </div>
+    <div class="flip-card-back">
+      <h2>I Found a Monkey!</h2> 
+      <p class = "caption">This is me in Nevis, an island in the Carribean known for its ambient primate population. I was eating pretzels one day and this little guy came up to me and crawled on my shoulder. I did not feed him, I merely let him take my food.</p>
+    </div>
+  </div>
+</a>
+
+<a class="flip-card" href="#">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src = "imgs/range.jpg" class = "pic" id = "range" alt = "range"/>
+    </div>
+    <div class="flip-card-back">
+      <h2>Gun Range</h2> 
+      <p class = "caption">This is me at my favorite gun range in Island Lake, Michigan. I am shooting an old WWI infantry rifle given to my grandfather by one of his squadmates as a gift for saving his life in the battle of Okinawa. I love antique firearms, and will always prefer them to modern ones.</p>
+    </div>
+  </div>
+</a>
+
+<a class="flip-card" href="#">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src = "imgs/family.PNG" class = "pic" id = "fam" alt = "fam"/>
+    </div>
+    <div class="flip-card-back">
+      <h2>My Family</h2> 
+      <p class = "caption">This is me and my family, minus my mom who took the picture. My father, younger sister Sophie older sister Emily, and brother-in-law Stephen. We celebrating my dad's 55th birthday.</p>
+    </div>
+  </div>
+</a>
+
+<a class="flip-card" href="#">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src = "imgs/baseball.PNG" class = "pic" id = "ball" alt = "ball"/>
+    </div>
+    <div class="flip-card-back">
+      <h2>Batting Practice with the Tigers</h2> 
+      <p class = "caption">This is me and my best friend Ryan at Comerica Park. Back in highschool, we played a lot of baseball together, and still hit batting practice from time to time. One day, my dad surprised us with an invitation to hit pregame batting practice with our pro team. In the center is Joel Zumaya, a retired closing pitcher we liked from when we were kids.</p>
+    </div>
+  </div>
+</a>
+
+<a class="flip-card" href="#">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src = "imgs/miguel.jpg" class = "pic" id = "miguel" alt = "miguel"/>
+    </div>
+    <div class="flip-card-back">
+      <h2>Cuban Tobacco Farmer</h2> 
+      <p class = "caption">This is me at a tobacco plantation in Vinalez, Cuba. My team and I went here after a week of installing water filters in poorer communities for the previous week. While there, I had an awesome conversation with a farmer named Miguel Cortez, who had one of the wisest outlooks on life I have ever witnessed.</p>
+    </div>
+  </div>
+</a>
+
+
+</div>
+
+
+
+</main>
+    <footer>
+   	  <img src = "imgs/crest.png" id = "rotate_me" class = "crest" alt = "crest"/>
+      <p>
+      	Designed by Evan Hogan, Student at University of Michigan <br>
+      	School of Information, March 2020, Ann Arbor, MI
+      </p>
+    </footer>
+</body>
+</html>

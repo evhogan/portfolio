@@ -210,6 +210,9 @@ h3 {
 	height: 230px;
 }
 
+#thank {
+	display: block;
+}
 
 
 .main{
@@ -246,8 +249,81 @@ footer {
 
 footer > p {
 	font-size: 10pt;
-	text-shadow: 1px 1px #fdfd96;
+	text-shadow: 
+	1px 1px #fdfd96, 
+	2px 1px #fdfd96,
+	3px 1px #fdfd96;
 }
+
+/*gallery*/
+
+#container {
+	margin-top: 20px;
+	display: grid;
+  	grid-template-columns: 1fr 
+  	grid-template-rows: 400px, 400px, 400px;
+  	row-gap: 40px;
+  	justify-items: center;
+}
+
+.pic {
+	width: 300px;
+	height: 400px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 400px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card:focus .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: black;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.filter {
+	margin-top: 20px;
+	margin-left: 15px
+}
+
+.caption {
+	font-size: 12pt;
+}
+
 
 @media all and (min-width: 700px){
 	header {
@@ -349,6 +425,10 @@ footer > p {
 		font-size: 14px;
 	}
 
+#container {
+  	grid-template-columns: 1fr 1fr;
+}
+
 @media all and (min-width: 1100px){
 
 	#longbox {
@@ -423,6 +503,10 @@ footer > p {
 
 	header {
 		background-image: url("../imgs/banner.png");
+	}
+
+	#container {
+  	grid-template-columns: 1fr 1fr 1fr;
                
 }
 
