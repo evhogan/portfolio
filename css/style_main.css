@@ -49,8 +49,70 @@ header {
   to { transform: rotateY(360deg); }
 }
 
+#lander_crest {
+  -webkit-animation-name: lander; 
+  -webkit-animation-iteration-count: 7;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-duration: .7s;
+  animation-name: lander; 
+  animation-iteration-count: 7;
+  animation-timing-function: linear;
+  animation-duration: .7s;
+  width: 150px;
+  display: block;
+  margin: auto;
+  margin-top: 60px;
+}
+
+@-webkit-keyframes lander {
+  to { -webkit-transform: rotateY(360deg); }
+}
+
+@keyframes lander {
+  to { transform: rotateY(360deg); }
+}
+
+#lander_head {
+  -webkit-animation-name: fade; 
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards
+  -webkit-animation-duration: .7s;
+  -webkit-animation-delay: 4.9s;
+  animation-name: fade; 
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-duration: .7s;
+  animation-delay: 4.9s;
+  opacity: 0;
+}
+
+@-webkit-keyframes fade {
+ 	0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     }  
+ }
+
+@keyframes fade {
+  	0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     }  
+ }
+
+
+
 @media screen and (prefers-reduced-motion: reduce) {
   #rotate_me {
+    -webkit-animation: none;
+    animation: none;
+  }
+
+  #lander {
     -webkit-animation: none;
     animation: none;
   }
