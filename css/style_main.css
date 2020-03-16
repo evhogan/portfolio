@@ -50,11 +50,11 @@ header {
 }
 
 #lander_crest {
-  -webkit-animation-name: lander; 
+  -webkit-animation-name: lander_spin; 
   -webkit-animation-iteration-count: 7;
   -webkit-animation-timing-function: linear;
   -webkit-animation-duration: .7s;
-  animation-name: lander; 
+  animation-name: lander_spin; 
   animation-iteration-count: 7;
   animation-timing-function: linear;
   animation-duration: .7s;
@@ -64,11 +64,11 @@ header {
   margin-top: 60px;
 }
 
-@-webkit-keyframes lander {
+@-webkit-keyframes lander_spin {
   to { -webkit-transform: rotateY(360deg); }
 }
 
-@keyframes lander {
+@keyframes lander_spin {
   to { transform: rotateY(360deg); }
 }
 
@@ -111,12 +111,6 @@ header {
     -webkit-animation: none;
     animation: none;
   }
-
-}
-
-#headshot {
-	width: 250px;
-}
 
 /*page 1 images*/
 #headshot, #family, #hometown, #mountain, #beach {
