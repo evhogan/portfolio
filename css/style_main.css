@@ -107,15 +107,11 @@ header {
 
 
 @media screen and (prefers-reduced-motion: reduce) {
-  #rotate_me {
+  #rotate_me, #lander_crest {
     -webkit-animation: none;
     animation: none;
   }
 
-  #lander {
-    -webkit-animation: none;
-    animation: none;
-  }
 }
 
 #headshot {
